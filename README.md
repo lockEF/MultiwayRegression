@@ -13,4 +13,4 @@ library(devtools)
 install_github("lockEF/MultiwayClassification")
 ``` 
 
-This methodolgy was developed in collaboration with Tianmeng Lyu and Lynn E. Eberly. Code for this package was primarily written by Tianmeng Lyu.     
+This methodolgy was developed by Eric F. Lock, Tianmeng Lyu and Lynn E. Eberly. Code for this package was primarily written by Tianmeng Lyu.     
