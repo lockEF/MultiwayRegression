@@ -1,0 +1,11 @@
+Package: MultiwayClassification
+Type: Package
+Title: Linear Classification of Multi-Way Data
+Version: 1.0
+Date: 2016-06-03
+Author: Eric F. Lock, Tianmeng Lyu, and Lynn E. Eberly
+Maintainer: Eric F. Lock <elock@umn.edu>
+Description: Performs linear classification for data with multi-way structure.  The distance-weighted discrimination (DWD) or support vector machine (SVM) classification objectives are optimized under the assumption that the multi-way coefficients have low rank.    
+License: GPL-3
+Imports: DWD, kernlab, Matrix
+Depends: R(>= 2.10.0)
