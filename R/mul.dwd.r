@@ -91,12 +91,13 @@ mul.dwd=function(xmul,y,rank=1,C=100)
       betapre=beta
       
       decomp=svd(beta,r,r)
-      vs=matrix(NA,nrow=r,ncol=n3)
-      for (i in 1:r)
-      {
-        vs0=decomp$v[,i]*sqrt(decomp$d[i])
-        vs[i,]=vs0/sqrt(sum(vs0^2))
-      }
+      vs=t(decomp$v[,1:r])
+#      vs=matrix(NA,nrow=r,ncol=n3)
+#      for (i in 1:r)
+#      {
+#        vs0=decomp$v[,i]*sqrt(decomp$d[i])
+#        vs[i,]=vs0/sqrt(sum(vs0^2))
+#      }
       
       ###fix v, update w
       for (i in 1:n1)
@@ -126,12 +127,13 @@ mul.dwd=function(xmul,y,rank=1,C=100)
       }
       
       decomp=svd(beta,r,r)
-      ws=matrix(NA,nrow=r,ncol=n2)
-      for (i in 1:r)
-      {
-        ws0=decomp$u[,i]*sqrt(decomp$d[i])
-        ws[i,]=ws0/sqrt(sum(ws0^2))
-      }
+      ws=t(decomp$u[,1:r])
+  #    ws=matrix(NA,nrow=r,ncol=n2)
+  #    for (i in 1:r)
+  #    {
+  #      ws0=decomp$u[,i]*sqrt(decomp$d[i])
+  #      ws[i,]=ws0/sqrt(sum(ws0^2))
+  #    }
       
       ###fix w, update v
       for (i in 1:n1)
