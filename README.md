@@ -15,4 +15,4 @@ install_github("lockEF/MultiwayClassification")
 
 This methodology was developed by Eric F. Lock, Tianmeng Lyu and Lynn E. Eberly. Code for this package was primarily written by Tianmeng Lyu.     
 
-[1] Lyu, T., Lock, E.F., & Eberly, L. E. (2016). Bayesian genome- and epigenome-wide association studies with gene level dependence. arXiv preprint: https://arxiv.org/abs/1606.08046 .
+[1] Lyu, T., Lock, E.F., & Eberly, L. E. (2016). Discriminating sample groups with multi-way data. arXiv preprint: https://arxiv.org/abs/1606.08046 .
