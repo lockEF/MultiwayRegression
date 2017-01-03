@@ -1,11 +1,11 @@
-Package: MultiwayClassification
+Package: MultiwayRegression
 Type: Package
-Title: Linear Classification of Multi-Way Data
+Title: Perform tensor-on-tensor regression
 Version: 1.0
-Date: 2016-06-03
-Author: Eric F. Lock, Tianmeng Lyu, and Lynn E. Eberly
+Date: 2016-12-31
+Author: Eric F. Lock
 Maintainer: Eric F. Lock <elock@umn.edu>
-Description: Performs linear classification for data with multi-way structure.  The distance-weighted discrimination (DWD) or support vector machine (SVM) classification objectives are optimized under the assumption that the multi-way coefficients have low rank.    
+Description: Functions to predict one multi-way array (i.e., a tensor) from another multi-way array. 
 License: GPL-3
-Imports: DWD, kernlab, Matrix
+Imports: MASS
 Depends: R(>= 2.10.0)
