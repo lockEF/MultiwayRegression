@@ -10,5 +10,5 @@ library(devtools)
 install_github("lockEF/MultiwayRegression")
 ``` 
 
-[1] Lock, E.F. (2017). Tensor-on-tensor regression. arXiv preprint: https://arxiv.org/abs/1606.08046 .
+[1] Lock, E.F. (2017). Tensor-on-tensor regression. arXiv preprint: https://arxiv.org/abs/1701.01037.
 
