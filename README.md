@@ -1,6 +1,6 @@
 # MultiwayRegression
 
-This is an R package to to predict one multi-way array (i.e., a tensor) from another multi-way array [1].  
+This is an R package to predict one multi-way array (i.e., a tensor) from another multi-way array [1].  
 
 The `MultiwayRegression` package can be installed, directly from GitHub, using the devtools library:
 
@@ -8,6 +8,7 @@ The `MultiwayRegression` package can be installed, directly from GitHub, using t
 install.packages(devtools)
 library(devtools)
 install_github("lockEF/MultiwayRegression")
+library(MultiwayRegression)
 ``` 
 
 [1] Lock, E.F. (2017). Tensor-on-tensor regression. arXiv preprint: https://arxiv.org/abs/1701.01037.
