@@ -4,7 +4,7 @@
 Bayesian inference for reduced rank regression
 }
 \description{
-Performs Bayesian inference for a linear model to estimate one multi-way array from another, under the restriction that the coefficient array has given PARAFAC rank.  By default, estimates are chosen to minimize a least-squares objective;  an optional penalty term allows for $L_2$ regularization of the coefficient array.  
+Performs Bayesian inference for a linear model to estimate one multi-way array from another, under the restriction that the coefficient array has given PARAFAC rank.  
 }
 \usage{
 rrrBayes(X,Y,Inits,Xmat.new,R=1,lambda=0,Samples=1000, thin=1,seed=0)
@@ -44,7 +44,9 @@ An array of dimension (Samples/thin) x M x Q_1 x ... x Q_M, giving (Samples/thin
 }
 
 \references{
+	Lock, E.F. (2017). Tensor-on-tensor regression. arXiv preprint: https://arxiv.org/abs/1701.01037.
 }
+
 \author{
 Eric F. Lock 
 }

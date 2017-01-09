@@ -105,7 +105,8 @@ rrr <- function(X,Y,R=1,lambda=0,annealIter=0,convThresh=10^(-5), seed=0){
     }
   if(j>1) conv = abs(sseR[length(sseR)]-sseR[length(sseR)-L-M])/sseR[length(sseR)] 
   }
-  return(list(U=U,V=V,sse=sse,sseR=sseR))
+  B = array(t(Bmat)%*%t(Vmat),dim = c(P,Q))
+  return(list(U=U,V=V,B=B,sse=sse,sseR=sseR))
 }
 
 

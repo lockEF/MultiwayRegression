@@ -38,6 +38,8 @@ rrr(X,Y,R=1,lambda=0,annealIter=0,convThresh=10^(-5), seed=0)
  List of length L. U[[l]]: P_l x R gives the coefficient basis for the l'th mode of X.}
 \item{V}{
 	List of length M. V[[m]]: Q_m x R gives the coefficient basis for the m'th mode of Y.}
+\item{B}{
+	Coefficient array of dimension P_1 x ... x P_L x Q_1 x ... x Q_M.  Given by the CP factorization defined by U and V.}
 \item{sse}{
 	Vector giving the sum of squared residuals at each iteration.}
 \item{sseR}{
@@ -45,6 +47,7 @@ rrr(X,Y,R=1,lambda=0,annealIter=0,convThresh=10^(-5), seed=0)
 }
 
 \references{
+	Lock, E.F. (2017). Tensor-on-tensor regression. arXiv preprint: https://arxiv.org/abs/1701.01037.
 }
 \author{
 Eric F. Lock 
@@ -52,7 +55,8 @@ Eric F. Lock
 
 \examples{
 data(SimData) ##loads simulated X: 100 x 15 x 20 and Y: 100 x 5 x 10 
-Results <- rrr(X,Y,R=2)
+Results <- rrr(X,Y,R=2)  ##Fit rank 2 model with no regularization
+Y_pred <- ctprod(X,Results$B,2)  ##Array of fitted values
 }
 
 
