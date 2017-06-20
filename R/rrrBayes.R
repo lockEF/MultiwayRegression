@@ -11,7 +11,7 @@ rrrBayes <- function(X,Y,Inits,X.new,R=1,lambda=0,Samples=1000, thin=1,seed=0){
   Q = dim(Y)[2:(M+1)]
   Xmat = array(X,dim=c(N,prod(P)))
   Ymat = array(Y,dim=c(N,prod(Q)))
-  Xmat.new = array(X.new,dim=c(dim(X)[1],prod(P)))
+  Xmat.new = array(X.new,dim=c(dim(X.new)[1],prod(P)))
   Yvec = as.vector(Y)
   Vmat = matrix(nrow=prod(Q),ncol=R)
   for(r in 1:R){
@@ -119,7 +119,7 @@ rrrBayes <- function(X,Y,Inits,X.new,R=1,lambda=0,Samples=1000, thin=1,seed=0){
         Vmat[,r] = as.vector(array(apply(expand.grid(Vr), 1, prod), dim=Q))
       }
   }
-  Ypred_samps <- arrray(Ypred_samps,dim=c(floor(Samples/thin),dim(Xmat.new)[1],Q) )
+  Ypred_samps <- array(Ypred_samps,dim=c(floor(Samples/thin),dim(Xmat.new)[1],Q) )
   return(Ypred_samps)
 }
 
