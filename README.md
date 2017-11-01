@@ -5,7 +5,7 @@ This is an R package to predict one multi-way array (i.e., a tensor) from anothe
 The `MultiwayRegression` package can be installed, directly from GitHub, using the devtools library:
 
 ```
-install.packages(devtools)
+install.packages("devtools")
 library(devtools)
 install_github("lockEF/MultiwayRegression")
 library(MultiwayRegression)
