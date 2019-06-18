@@ -2,7 +2,7 @@
 
 This is an R package to predict one multi-way array (i.e., a tensor) from another multi-way array [1]. 
 
-A stable version of the package is available from CRAN [(link)](https://cran.r-project.org/web/packages/MultiwayRegression/index.html), and can be installed via ``install.packages("MultiwayRegression")``. 
+A stable version of the package is available from CRAN [(link)](https://cran.r-project.org/web/packages/MultiwayRegression/index.html), which was checked and submitted by Bowen Li. This can be installed via ``install.packages("MultiwayRegression")``. 
 
 This version of the `MultiwayRegression` package can also be installed, directly from GitHub, using the devtools library:
 
